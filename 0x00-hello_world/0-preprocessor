@@ -1,2 +1,0 @@
-#!/binbash
-gcc -E $CFILE > c
