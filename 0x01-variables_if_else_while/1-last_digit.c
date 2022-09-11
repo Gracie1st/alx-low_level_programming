@@ -4,9 +4,9 @@
 /**
  *   * main - The entry head of the program
  *      * if - conditionals
- *    * else if - conditional check
- *         * Return: outputs result which is an int as defined
- *          */
+ *          * else if - conditional check
+ *               * Return: outputs result which is an int as defined
+      */
 int main(void)
 {
 	int n;
@@ -15,7 +15,6 @@ int main(void)
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
-
 
 	last_d = n % 10;
 	/* your code goes there */
