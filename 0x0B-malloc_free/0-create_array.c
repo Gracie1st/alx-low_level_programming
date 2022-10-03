@@ -9,30 +9,19 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *buffer;
-	unsigned int position;
+	char *cr;
+	unsigned int i;
 
 	if (size == 0)
-	{
 		return (NULL);
-	}
-	buffer = (char *) malloc(size * sizeof(c));
-	
-	if (buffer == 0)
-	{
+
+	cr = malloc(sizeof(c) * size);
+
+	if (cr == NULL)
 		return (NULL);
-	}
 
-	else
-	{
-		position = 0;
-		while (position < size) /*While for array*/
-		{
-			*(buffer + position) = c;
-			position++;
-		}
+	for (i = 0; i < size; i++)
+		cr[i] = c;
 
-		return (buffer);
-	}
-
+	return (cr);
 }
