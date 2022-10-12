@@ -1,6 +1,6 @@
 #ifndef _DOG_H_FILE
 #define _DOG_H_filE
-
+#include <stdlib.h>
 /**
  * struct dog - A new type describing a dog
  *  @name: The name of the dog
