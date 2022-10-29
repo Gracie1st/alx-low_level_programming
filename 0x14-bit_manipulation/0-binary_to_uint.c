@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * binary_to_uint - converts a binary number to an
  * unsigned int.
@@ -29,9 +27,9 @@ unsigned int binary_to_uint(const char *b)
 
 		if (b[len] & 1)
 		{
-			ui += base_two;
+`:wq
+	fit add .ui += base_two;
 		}
 	}
-
 	return (ui);
 }
